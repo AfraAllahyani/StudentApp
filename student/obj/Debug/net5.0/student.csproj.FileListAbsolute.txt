@@ -1,0 +1,15 @@
+/Users/afra/Projects/student/student/bin/Debug/net5.0/student.deps.json
+/Users/afra/Projects/student/student/bin/Debug/net5.0/student.runtimeconfig.json
+/Users/afra/Projects/student/student/bin/Debug/net5.0/student.runtimeconfig.dev.json
+/Users/afra/Projects/student/student/bin/Debug/net5.0/student.dll
+/Users/afra/Projects/student/student/bin/Debug/net5.0/ref/student.dll
+/Users/afra/Projects/student/student/bin/Debug/net5.0/student.pdb
+/Users/afra/Projects/student/student/obj/Debug/net5.0/student.csprojAssemblyReference.cache
+/Users/afra/Projects/student/student/obj/Debug/net5.0/student.GeneratedMSBuildEditorConfig.editorconfig
+/Users/afra/Projects/student/student/obj/Debug/net5.0/student.AssemblyInfoInputs.cache
+/Users/afra/Projects/student/student/obj/Debug/net5.0/student.AssemblyInfo.cs
+/Users/afra/Projects/student/student/obj/Debug/net5.0/student.csproj.CoreCompileInputs.cache
+/Users/afra/Projects/student/student/obj/Debug/net5.0/student.dll
+/Users/afra/Projects/student/student/obj/Debug/net5.0/ref/student.dll
+/Users/afra/Projects/student/student/obj/Debug/net5.0/student.pdb
+/Users/afra/Projects/student/student/obj/Debug/net5.0/student.genruntimeconfig.cache

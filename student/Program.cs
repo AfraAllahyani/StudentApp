@@ -1,45 +1,60 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace student
 {
     class Program
     {
+        public static int sameGrade (List<int> Grades, int grade)
+        {
+            int numberOfStudents = 0;
+            foreach (var item in Grades)
+            {
+                if (grade == item)
+                numberOfStudents += 1;
+
+            }
+            return numberOfStudents;
+        }
+
         static void Main(string[] args)
         {
-            string[] Names = { };
-            int[] Grades = { };
-            string result;
-            for (int a = 0; a <= Names.Length; a++)
+            List<string> Names = new List<string>();
+            List<int> Grades = new List<int>();
+            string studentName = "";
+            int studentGrade ;
+
+            for (int a = 0; a <= Names.Count; a++)
             {
-                // Take student name and increment array by 1 
-                Console.Write("Type student name: ");
-                Array.Resize(ref Names, Names.Length + 1);
-                Names[Names.GetUpperBound(0)] = Console.ReadLine();
-                //Take student Grade and increment array by 1
-                Console.Write("Type student Grade: ");
-                Array.Resize(ref Grades, Grades.Length + 1);
-                Grades[Grades.GetUpperBound(0)] = Convert.ToInt32(Console.ReadLine());
-                //after taking student info , aske if finish or not
-                Console.WriteLine("Do you finish entering students ? ( yes / no )");
+                Console.WriteLine("student name: ");
+                studentName  = Console.ReadLine();
+                Names.Add(studentName);
+               
+                Console.WriteLine("student Grade: ");
+                studentGrade = Convert.ToInt32(Console.ReadLine());
+                Grades.Add(studentGrade);
+                
+                Console.WriteLine("Add Another student ? ( yes / no )");
                 string answer = Console.ReadLine();
 
                 if (answer == "yes")
                 {
-                    break;
+                    continue;
                 }
                 else
                 {
-                    continue;
-                }
-
+                    break; 
+                }     
             }
-            for (int a = 0; a < Names.Length; a++)
+            for (int i = 0; i < Names.Count; i++)
             {
-                if (Grades[a] >= 60) { result = "Passed"; }
-                else { result = "Failed"; }
-                Console.Write("| Student name is: {0} | Her Grade is: {1} | she is:  {2}", Names[a], Grades[a], result + "\n");
+                Console.WriteLine("Student Name : " + Names[i] + " sudent grade: " + Grades[i]);
             }
-
+            Console.WriteLine("Enter the grade to search: ");
+            int gradefromuser = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Number of Student with grade: {0} is: {1} ",gradefromuser, sameGrade(Grades, gradefromuser));
         }
     }
 }
+

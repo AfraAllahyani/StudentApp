@@ -1,4 +1,4 @@
-# Student Applicaton 
+# Student Application
 This code is written to take the students name and grades ( with no specific number) add them in the system .
 Also check if there are students have the same grade .
 
